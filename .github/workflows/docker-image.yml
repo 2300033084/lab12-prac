@@ -32,7 +32,7 @@ jobs:
           context: ./backend-jenkins
           file: ./backend-jenkins/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/lab12-prac-backend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/k8-prac-backend:latest
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -41,4 +41,4 @@ jobs:
           context: ./frontend-jenkins
           file: ./frontend-jenkins/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/lab12-prac-frontend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/k8-prac-frontend:latest
